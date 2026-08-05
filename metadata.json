@@ -1,0 +1,10 @@
+{
+  "name": "Kancelaria i Sprawy",
+  "description": "Agrafka 📎 - Przyjazny asystent pism urzędowych, ZUS i e-maili. Tłumaczy trudne pisma na prosty język i prowadzi krok po kroku.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

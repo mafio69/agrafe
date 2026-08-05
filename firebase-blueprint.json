@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "cases": {
+      "title": "Sprawy",
+      "description": "Przechowuje pojedyncze sprawy urzędowe i biznesowe, osie czasu oraz notes Gemini.",
+      "properties": {
+        "title": { "type": "string" },
+        "caseNumber": { "type": "string" },
+        "category": { "type": "string" },
+        "status": { "type": "string" },
+        "priority": { "type": "string" },
+        "summary": { "type": "string" },
+        "createdById": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "actionCount": { "type": "number" },
+        "isArchived": { "type": "boolean" },
+        "isKnowledgeBase": { "type": "boolean" },
+        "notebook": { "type": "string" }
+      }
+    },
+    "documents": {
+      "title": "Dokumenty",
+      "description": "Załączniki i skany dodane do spraw.",
+      "properties": {
+        "caseId": { "type": "string" },
+        "title": { "type": "string" },
+        "fileType": { "type": "string" },
+        "ocrContent": { "type": "string" },
+        "summary": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "knowledgeBase": {
+      "title": "Baza Wiedzy",
+      "description": "Archiwum wiedzy dla zbieracza.",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "content": { "type": "string" },
+        "tags": { "type": "array" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "keepNotes": {
+      "title": "Notatki Keep",
+      "description": "Notatki do spraw i szybkie pomysły.",
+      "properties": {
+        "caseId": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  }
+}
